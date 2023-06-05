@@ -1,0 +1,46 @@
+/* Réinitialisation CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  color: white;
+}
+
+/* Styles généraux */
+body {
+  font-family: "poppins", sans-serif;
+  line-height: 1.5;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.wrapper2{
+  position: absolute;
+  top:20%;
+  left: 30%;
+  width: 40%;
+  height: 44%;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  align-items: center;
+}
+
+.wrapper2:hover{
+  transform: scale(0.9);
+}
+
+
+.icone{
+  position: absolute;
+  left: 27%;
+  top: 20%;
+  color: #fff;
+}
+.icone:hover{
+  transform: scale(1.5);
+}

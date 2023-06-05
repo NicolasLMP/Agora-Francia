@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="fonction.js"></script>
+  <link rel="stylesheet" href="panier.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Agora Francia</title>
+
+<body>
+  <header>
+      <h2 class="logo">
+        Agora Francia
+      </h2>
+      <nav class="navigation">
+        <a href="index.html">Accueil</a>
+        <a href="#">Tout parcourir</a>
+        <a href="#">A propose de nous</a>
+        <a href="#">Contact</a>
+        <a href="login.html"><i  class='bx bx-user'></i></a>
+        <a href="panier.html"><i class='bx bx-shopping-bag'></i></a>
+        <div class="icon">
+          <i class='bx bx-menu'></i>
+        </div>
+
+      </nav>
+    </header>
+</div>
+
+   <div class="wrapper">     
+	<center>
+	<h3>Récapitulatif :</h3>
+	<br>
+	<p>Total:    XX,XX$ </p><br>
+	<a class="bouton" href="#">Acheter maintenant</a><br><br><br><br>
+	<img src="imgPanier/secur2.png" alt="Image" width="300" height="75">
+	
+	</div></div>
+
+	<div class="carre"></div>
+
+
+	<div id="vide">
+	<img src="imgPanier/vide.png" alt="Image" width="480" height="220"></div>
+
+	<div id="fin">
+	<img src="imgPanier/finP.png" alt="Image" width="400" height="80"></div>
+
+
+
+
+</body> 
+<script>
+
+const menu = document.querySelector(".icon")
+        const bouton = document.querySelector(".bouton")
+        menu.addEventListener('click',()=>{
+        bouton.classList.toggle('mobile-menu')
+        })
+</script>
+  </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		 <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Agora Francia</title>
+	</head>
+	<body>
+		<header>
+			<h2 class="logo">
+				Agora Francia
+			</h2>
+			<nav class="navigation">
+				<a class="page" href="index.html">Accueil</a>
+				<a class="page" href="tout_parcourir.html" id="tout-parcourir-link" class="link">Tout parcourir</a>
+				<a class="page" href="presentation.html">A propose de nous</a>
+				<a class="page" href="index.html#pageContact">Contact</a>
+				<a href="login.html"><i  class='bx bx-user'></i></a>
+				<a href="panier.html"><i class='bx bx-shopping-bag'></i></a>
+				<div class="icon">
+					<i class='bx bx-menu'></i>
+				</div>
+
+			</nav>
+			<div id="product-list-container"></div>  
+			<div id="retour-accueil-container"></div>
+		</header>
+		<section id="prodetails" class="section-p1">
+			<div class="single-pro-image">
+				<img src="pokemonRouge.png" width="100%" id="mainImg" >
+				
+			</div>
+			<div class="single-pro-details">
+				<h6>Jeux Game Boy</h6>
+				<h4>Pokemon Rouge</h4>
+				<h2>15€</h2>
+				<button class="normal">Ajouter au panier</button>
+				<h4>Description du produit</h4>
+				<span>gsuberuiglhd sirdgshid sireghsdrigsrt brtgdhsrg rsighsirdhgbrtb bdigjsrdhgdi svbeubv seufbsuqkdbv sufhnsdvb sukdhfvisdfbvsjdbv sdkuvhsdivbskedi;vjjshv skudhckvnsdvjskdv,jsie csidkjvisrud skehfvkseiv skdihvirshisldj viozsehviskdc vsiuvehsdvnihurs huvskvhihis</span>
+			</div>
+		</section>
+		<footer>
+			<p>@Copyright machinmachin</p>
+		</footer>
+		<script>
+			var mainImg = document.getElementById("mainImg");
+			var smallImg = document.getElementsByClassName("small-img");
+
+			smallImg[0].onclick = function(){
+    			mainImg.src = smallImg[0].src;
+			}
+
+			smallImg[1].onclick = function(){
+    			mainImg.src = smallImg[1].src;
+			}
+
+			smallImg[2].onclick = function(){
+   				 mainImg.src = smallImg[2].src;
+			}
+
+			smallImg[3].onclick = function(){
+   				 mainImg.src = smallImg[3].src;
+			}
+		</script>
+	</body>

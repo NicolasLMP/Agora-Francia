@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		 <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="java.js"></script>
+		<script src="fonction.js"></script>
+		<script src="user.js"></script>
+		<title>Agora Francia</title>
+	</head>
+	<body>
+		<div id="content">
+		<header>
+			<h2 class="logo">
+				Agora Francia
+			</h2>
+			<nav class="navigation">
+  				<a class="page" href="#">Accueil</a>
+  				<a class="page" href="tout_parcourir_connecte.php">Tout parcourir</a>
+  				<a class="page" href="presentation_connecte.html">A propos de nous</a>
+  				<a class="page" href="#pageContact">Contact</a>
+  				<div class="dropdown">
+   					<button class="btn-user"><i class="bx bx-user"></i></button>
+    				<ul class="menu-deroulant">
+      					<li><a class="page" href="moncompte.php">Mon compte</a></li>
+      					<li><a class="page" href="mesArticles.php">Mes articles</a></li>
+      					<li><a class="page" href="index.html">Déconnexion</a></li>
+    				</ul>
+  				</div>
+				<a href="cart.php"><i class='bx bx-shopping-bag'></i></a>
+  				<button class="vendre"><a href="vendre.php">Vend tes articles</a></button>
+  				<div class="icon">
+    				<i class='bx bx-menu'></i>
+  				</div>
+			</nav>
+
+			<div id="product-list-container"></div>  
+			<div id="retour-accueil-container"></div>
+		</header>
+		<section class="content">
+			<h1>Qui sommes-nous<br></h1>
+			<p>
+				Nous sommes un site de revente de jeux-vidéos retro ou plus <br>actuel
+					Notre équipe est composée de Tanguy, Nicolas et Arthur 
+			</p>
+			<button class="button">
+				<a href="presentation.html">En savoir plus</a>
+			</button>
+		</section>
+		<h1 class="produits_text">Les nouveautés</h1>
+		<section class="section_produits">
+			<div class="produits">
+				<div class="carte" onclick="window.location.href='ficheProduit.html';">
+					<div class="img"><img src="pokemonRouge.png"></div>
+					<div class="desc">Jeux Game Boy</div>
+					<div class="titre">Pokemon Rouge</div>
+					<div class="box">
+						<div class="prix">15€</div>
+						<button class="achat">Ajouter au panier</button>
+					</div>
+				</div>
+				<div class="carte">
+					<div class="img"><img src="mariokart.png"></div>
+					<div class="desc">Jeux Ds</div>
+					<div class="titre">Mario Kart Ds</div>
+					<div class="box">
+						<div class="prix">15€</div>
+						<button class="achat">Ajouter au panier</button>
+					</div>
+				</div>
+				<div class="carte">
+					<div class="img"><img src="gta5.png"></div>
+					<div class="desc">Jeux PS4</div>
+					<div class="titre">GTA V</div>
+					<div class="box">
+						<div class="prix">15€</div>
+						<button class="achat">Ajouter au panier</button>
+					</div>
+				</div>
+				<div class="carte">
+					<div class="img"><img src="360.png"></div>
+					<div class="desc">Console de jeu</div>
+					<div class="titre">XBOX 360</div>
+					<div class="box">
+						<div class="prix">80€</div>
+						<button class="achat">Ajouter au panier</button>
+					</div>
+				</div>
+			</div>
+		</section> 
+		<div id="contact">
+			<a name="pageContact"></a>
+			<div class="contactUs">
+				<div class="title">
+					<h2>
+						Contactez-nous
+					</h2>
+				</div>
+				<div class="box2">
+					<div class="contact-info form">
+						<h3>
+							Envoyez un message
+						</h3>
+						<form>
+							<div class="formBox">
+								<div class="row50">
+									<div class="inputBox">
+										<span>Prénom</span>
+										<input type="text" placeholder="Jean">
+									</div>
+									<div class="inputBox">
+										<span>Nom</span>
+										<input type="text" placeholder="Dupont">
+									</div>
+								</div>
+								<div class="row50">
+									<div class="inputBox">
+										<span>Email</span>
+										<input type="text" placeholder="jean.dupont@email.com">
+									</div>
+									<div class="inputBox">
+										<span>Numéro</span>
+										<input type="text" placeholder="0782674953">
+									</div>
+								</div>
+								<div class="row100">
+									<div class="inputBox">
+										<span>Message</span>
+										<textarea placeholder="Ecrivez votre message ici..."></textarea>
+									</div>
+								</div>
+								<div class="row100">
+									<div class="inputBox">
+										<input type="submit" value="Envoyez">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="contact-info info">
+						<h3>
+							Info Contact
+						</h3>
+						<div class="infoBox">
+							<div>
+								<span><i class='bx bx-map'></i></span>
+								<p>ECE Paris, 16 rue Sextius Michel<br>75015 Paris, France</p>
+							</div>
+							<div>
+								<span><i class='bx bx-envelope'></i></span>
+								<a href="mailto:contact@agora.fr">contact@agora.fr</a>
+							</div>
+							<div>
+								<span><i class='bx bx-phone'></i></span>
+								<a href="tel:0782674953">0782674953</a>
+							</div>
+							<ul class="sci">
+								<li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+								<li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+								<li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+								<li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="contact-info map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.36973817593!2d2.286014876851318!3d48.8511595012148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67192813cdbc3%3A0xfab7b14ec2fc62b4!2sECE%20Paris%20Lyon!5e0!3m2!1sfr!2sfr!4v1685616610144!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>@Copyright machinmachin</p>
+	</footer>
+
+	</body>
+	</html>
